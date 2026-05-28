@@ -1,9 +1,11 @@
 ﻿import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'screens/splash_screen.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await MobileAds.instance.initialize();
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
@@ -31,7 +33,6 @@ class FaceScoreApp extends StatelessWidget {
           secondary: Color(0xFF7B61FF),
           surface: Color(0xFF13131A),
         ),
-        fontFamily: 'Poppins',
       ),
       home: const SplashScreen(),
     );
