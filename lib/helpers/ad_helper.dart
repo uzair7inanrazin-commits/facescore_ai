@@ -9,14 +9,14 @@ class AdHelper {
   // -------------------------------------------------------
   static String get bannerAdUnitId {
     if (Platform.isAndroid) {
-      return 'ca-app-pub-3940256099942544/6300978111'; // Test ID
+      return 'ca-app-pub-6826840330221620/5349981246'; // Test ID
     }
     throw UnsupportedError('Unsupported platform');
   }
 
   static String get rewardedAdUnitId {
     if (Platform.isAndroid) {
-      return 'ca-app-pub-3940256099942544/5224354917'; // Test ID
+      return 'ca-app-pub-6826840330221620/1115222765'; // Test ID
     }
     throw UnsupportedError('Unsupported platform');
   }
